@@ -1,80 +1,89 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Radio Morocco</title>
+    <link rel="icon" href="img/logo.jpg">
+    <link rel="stylesheet" href="css/audio_player.css">
+    <link rel="stylesheet" href="css/header_nav.css">
+    <link rel="stylesheet" href="css/article.css">
 </head>
 <body>
-  <br><br><br>
-  <! - بداية رمز بانر shorte.st ->
+<style type="text/css">
+*{
+padding:0px;
+margin:0px;
+}
+#audio_file{
+padding:0px;
+margin:0px;
+}
+</style>
+    <div id="audio_player">
+        <main>
+            <header id="header">
+                  
+                <nav>
+                    <img src="" alt="" id="logo">
+                    <h2 id="siteName" style="font-family: fantasy; color:purple;">Radio <span id="city">Morocco</span></h2>
+                    <p id="radio-title" style="color: yellow; font-weight: bold;">اسم الإذاعة</p>
+                </nav>
+            </header>
 
-<a href="http://join-shortest.com/ref/ce9a5666da؟user-type=new"> <img src = "// static.shorte .st / bundles / smeuser / img / Referal_banners / es_250x250.png؟ 2022-06-29.0 "title =" إدراج نصوص من خلال الإنترنت y recibe el pago "width =" 250 "height =" 250 "/> # ref-menu </a>
+ <div id="headerone">
+            <article id="player_buttons">
+                <img src="img/back.png" alt="" id="back">
+                <img src="img/play.png" alt="" id="play">
+                <img src="img/next.png" alt="" id="next">
+            </article>
 
-<! - نهاية كود البانر shorte.st ->
-  <br><br><br>
-<input type="color" id="col">
-  <!-- Start of shorte.st banner code -->
+            <article>
+                <!--<video src="" id="audio_file"></video>-->
+                <audio src="" id="audio_file"></audio>
+                
+                <h2>الصوت</h2>
+                <input id="volume" type="range" value="50" min="0" max="100" id="range">  
+                <h2>السرعة</h2>
+                <input id="speed" type="range" value="100" min="0" max="200" id="range">         
+            </article>
 
-<a href="http://join-shortest.com/ref/ce9a5666da?user-type=new"><img src="https://static.shorte.st/bundles/smeuser/img/referral_banners/125x125.png?2022-06-29.0" title="Earn on short links" width="125" height="125" />#ref-menu</a>
+            
+            <article id="colors">
+            <br>
+           
+           <fieldset class="feildset" >
+           <legend class="legend" >colors</legend>
+           
+            <div class="btns" >
+                    <button id="color-1"></button>
+                    <button id="color-2"></button>
+                    <button id="color-3"></button>
+                    <button id="color-4"></button>
+                   <button id="color-5"></button>
+                   <button id="color-6"></button>
+                   <button id="color-7"></button>
+                   <button id="color-8"></button>
+                   
+             </div>
+                   
+                   </fieldset>
+           </article>
+           
+           <br>
+           <br>
+           <br>
+           </div>
+           <footer id="footer">
 
-<!-- End of shorte.st banner code -->
-  
- 
-
-<script type="text/javascript">//<![CDATA[ 
-
-(function() {
-
-    var configuration = {
-
-    "token": "cc2b433862f14a3edeafcc353389c333",
-
-    "excludeDomains": [
-
-        "oussamazaitoune7.github.io/Radio-Morocco-/"
-
-    ],
-
-    "capping": {
-
-        "limit": 5,
-
-        "timeout": 24
-
-    },
-
-    "entryScript": {
-
-        "type": "timeout",
-
-        "timeout": 3000,
-
-        "capping": {
-
-            "limit": 5,
-
-            "timeout": 24
-
-        }
-
-    }
-
-};
-
-    var script = document.createElement('script');
-
-    script.async = true;
-
-    script.src = '//cdn.shorte.st/link-converter.min.js';
-
-    script.onload = script.onreadystatechange = function () {var rs = this.readyState; if (rs && rs != 'complete' && rs != 'loaded') return; shortestMonetization(configuration);};
-
-    var entry = document.getElementsByTagName('script')[0];
-
-    entry.parentNode.insertBefore(script, entry);
-
-})();
-
-//]]></script>                
+           </footer>
+        </main>
+    </div>
+    <script src="scripts/resize.js"></script>
+    <script src="scripts/volume.js"></script>
+    <script src="scripts/speedVolume.js"></script>
+    <script src="scripts/colors.js"></script>
+    <script src="scripts/player_buttons.js"></script>
 </body>
-<script src="testlocal.js"></script>
 </html>
