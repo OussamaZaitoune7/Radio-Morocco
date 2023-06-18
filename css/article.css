@@ -4,6 +4,9 @@ background-color: #D3DD18;
 color: #FE7A15;
 
 }
+/* body {
+    background-color: red;
+} */
 
 article{
     text-align: center;
@@ -63,11 +66,11 @@ margin-right:50px;
 
 #color-5{
 margin-right:50px;
-    background-image: linear-gradient(to right, #3C4CAD, #F9C449);
+    background-image: linear-gradient(to right, #5a565a, #4d3d);
 }
 #color-6{
 margin-right:50px;
-    background-image: linear-gradient(to right, #3C4CAD, #F9C449);
+    background-image: linear-gradient(to right, #623596, #069bc9);
 }
 #color-7{
 margin-right:50px;
@@ -78,8 +81,12 @@ margin-right:50px;
     background-image: linear-gradient(to right, blue, red);
 }
 footer{
-    height: 90px;
-    background: white;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to right, #00d2ff, #928dab);
+  background-size: 100%;
+  text-align: center;
+  color: white;
 }
 #headerone{
 background: #eee;
@@ -88,8 +95,8 @@ background: #eee;
       
     
          animation-name: city;
-         animation-duration: 20s;
-         animation-delay: 3s;
+         animation-duration: 10s;
+         animation-delay: 10s;
          animation-iteration-count: infinite;
          animation-direction: normal;
          animation-timing-function: ease
@@ -97,43 +104,10 @@ background: #eee;
 }
 @keyframes city{
 
-0% {
-            color: #A7D676;
+from {
+            color: #128ed6;
          }
-         10% {
-            color: #85CBCC;
-         }
-         20% {
-            color: #CCABD8;
-           
-         }
-         30% {
-         color: #E4C787;
-         
-         }
-         40% {
-         color: #43978D;
-         
-         }
-         50% {
-         color: #F9E07F;
-         
-         }
-         60% {
-         color: red;
-         
-         }70% {
-         color: blue;
-         
-         }
-         80% {
-            color: yellowgreen;
-         }
-         90% {
-         color: orange;
-         
-         }
-         100% {
+         to {
             color: purple;
          }
 }
@@ -154,20 +128,27 @@ text-align:center;
 justify-content:center;
 align-items:center;
 border-radius:5px;
+width: 100%;
 }
 
 legend{
 color: blue;
-font-family:fantasy;
-font-size:larger;
 font-style:oblique;
 font-weight:bold;
+font-size: 20px;
 background:orangered;
 border-radius:8px;
+border: 5px solid slateblue;
 padding:5px;
 
 }
 .btns{
-float:right;
-
+text-align: center;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+align-content: center;
+justify-content: center;
+align-items: center;
+padding-left: 50px;
 }
