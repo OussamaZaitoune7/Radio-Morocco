@@ -9,7 +9,7 @@ class Player{
 
         this.audios =[];
         this.audios[0] = "https://streamer.eagrpservices.com/audio/radiomars.mp3";
-        this.audios[1] = "http://104.167.2.55:8000/;";
+        this.audios[1] = "https://download.quranicaudio.com/qdc/abu_bakr_shatri/murattal/78.mp3";
         this.audios[2] = "https://streamer.eagrpservices.com/audio/medradio.mp3";
         this.audios[3] = "https://streamer.eagrpservices.com/audio/chadafm.mp3";
         this.audios[4] = "https://live.medi1.com/medi1";
